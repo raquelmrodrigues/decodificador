@@ -1,0 +1,13 @@
+input {
+    display: block;
+    height: 55px;
+    width: 400px;
+    font-size: 16px;
+    padding: 20px;
+}
+
+div#corpo-form {
+
+    width: 420px;
+    margin: 150px auto 0px auto;
+}
