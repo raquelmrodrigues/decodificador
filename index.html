@@ -8,17 +8,21 @@
     <title>Decodificador</title>
 </head>
 <body>
-    <div id="corpo-form">
-        <input id="input" type="text">
+    <form id="formulario">
+        <div id="corpo-form">
+            <input id="input" placeholder="Texto" type="text">
         <br>
-
-    <select>
-        <option >Cifra de César</option>
-        <option >Base64</option>
-    </select>
-
-        <button>Decodificar</button>
-    </div>
+        <select id="seletor">
+            <option >Cifra de César</option>
+            <option >Base64</option>
+        </select>
+        <hr>
+        <input type="submit" value="Decodificar">
+        <br>
+        <input type="submit" value="Codificar">
+        </div>
+    </form>
     
+    <script src="main.js"></script>
 </body>
 </html>
