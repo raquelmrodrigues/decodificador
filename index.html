@@ -11,10 +11,11 @@
     <form id="formulario">
         <div id="corpo-form">
             <input id="input" placeholder="Texto" type="text">
+            <p hidden id="elementoEscondido"><input id="incremento" placeholder="Incremento" type="text"></p>
         <br>
         <select id="seletor">
-            <option >Cifra de César</option>
-            <option >Base64</option>
+            <option id="base">Base64</option>
+            <option id="cifra">Cifra de César</option>           
         </select>
         <hr>
         <input type="submit" value="Decodificar">
