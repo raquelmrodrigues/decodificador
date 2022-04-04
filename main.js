@@ -1,7 +1,11 @@
 var seletor = document.getElementById('seletor');
 var input = document.getElementById('input');
 var incremento = document.getElementById('incremento');
-var codificar = document.getElementById('codificar');
+var acao = document.getElementById('acao');
+var radio = document.getElementsByName('radio');
+var mostra = document.getElementById('mostra');
+
+
 
 seletor.addEventListener('change', function() {
     if (seletor.value == "Cifra de César") {
@@ -11,7 +15,17 @@ seletor.addEventListener('change', function() {
     }
 });
 
-function codificador(input, incremento) {
+radio.forEach((input) => {
+    input.addEventListener('change', function checked(){
+        if (document.getElementById('codificar').checked) {
+            acao.firstChild.data = "Codificar"
+        } else {
+            acao.firstChild.data = "Decodificar"
+        }
+    });
+})
+
+function codificadorCesar(input, incremento) {
     let resultado = []
     input = input.toLowerCase()
     for (let i = 0; i < input.length; i++) {
@@ -21,8 +35,28 @@ function codificador(input, incremento) {
         }
         resultado.push(String.fromCharCode(codigo))
     }
-    console.log(resultado)
+    mostra.innerHTML = resultado
 }
 
-codificar.addEventListener('click', function() {codificador(input.value, incremento.value)})
+function codificadorBase (input) {
+    resultado = btoa(input)
+    mostra.innerHTML = resultado
+}
+
+function decodificadorBase (input) {
+    resultado = atob(input)
+    mostra.innerHTML = resultado
+}
+
+
+acao.addEventListener('click', function() {
+    if(seletor.value == "Cifra de César" && document.getElementById('codificar').checked) {
+        codificadorCesar(input.value, incremento.value)
+    } else if (seletor.value == "Base64" && document.getElementById('codificar').checked) {
+        codificadorBase (input.value)
+    } else if (seletor.value == "Base64" && document.getElementById('decodificar').checked) {
+        decodificadorBase (input.value)
+    } 
+    
+})
 

@@ -1,13 +1,16 @@
 input {
-    display: block;
-    height: 25px;
-    width: 400px;
     font-size: 16px;
-    padding: 20px;
+    padding: 10px;
+}
+
+p {
+    font-size: 30px;
 }
 
 div#corpo-form {
     height: 50px;
-    width: 400px;
+    width: 275px;
     margin: 150px auto 0px auto;
+    height: 25px;
 }
+

@@ -12,14 +12,21 @@
         <div id="corpo-form">
             <input id="input" placeholder="Texto" type="text">
             <p hidden id="elementoEscondido"><input id="incremento" placeholder="Incremento" type="text"></p>
-        <br>
+        <hr>
+        <input type="radio" id="codificar" name="radio" value="codificar">
+        <label for="base">Codificar</label><br>
+        <input type="radio" id="decodificar" name="radio" value="decodificar">
+        <label for="cifra">Decodificar</label>
+        <hr>
         <select id="seletor">
             <option id="base">Base64</option>
             <option id="cifra">Cifra de César</option>           
         </select>
         <hr>
-        <button id="codificar" type="button">Codificar</button>
+        <button id="acao" type="button">Codificar</button>
+        <p id="mostra"></p>
         </div>
+        
     </form>
     
     <script src="main.js"></script>
