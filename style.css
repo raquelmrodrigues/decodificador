@@ -18,3 +18,14 @@ div#corpo-form {
     height: 25px;
 }
 
+button {
+    height: 50px;
+    width: 275px;
+    font-size: large;
+}
+
+select {
+    height: 50px;
+    width: 275px;
+    font-size: large;
+}
