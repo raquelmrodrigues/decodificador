@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(127, 196, 196);
+}
+
 input {
     font-size: 16px;
     padding: 10px;
