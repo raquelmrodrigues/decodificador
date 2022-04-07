@@ -19,7 +19,8 @@ p {
 }
 
 label{
-    font-size: large;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 div#corpo-form {
