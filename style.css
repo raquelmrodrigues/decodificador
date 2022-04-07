@@ -12,6 +12,10 @@ p {
     font-size: 30px;
 }
 
+label{
+    font-size: large;
+}
+
 div#corpo-form {
     height: 50px;
     width: 275px;
